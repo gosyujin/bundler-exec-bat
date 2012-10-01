@@ -1,0 +1,9 @@
+heroku=bundle-exec heroku $*
+jekyll=bundle-exec jekyll $*
+rackup=bundle-exec rackup $*
+rails=bundle-exec rails $*
+rake=bundle-exec rake $*
+rspec=bundle-exec rspec $*
+ruby=bundle-exec ruby $*
+spec=bundle-exec spec $*
+spork=bundle-exec spork $* 
