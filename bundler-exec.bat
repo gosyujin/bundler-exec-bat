@@ -23,6 +23,9 @@ for %%I in (bundle.bat) do (
           )
         )
       goto :LOOP
+      ) else (
+        echo this is root path: %*
+        %*
       )
   ) else (
     echo bundler is NOT found or Gemfile is NOT found: %*
