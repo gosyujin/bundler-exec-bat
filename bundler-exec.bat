@@ -10,7 +10,7 @@ for %%I in (bundle.bat) do (
       rem ex) "%LOCAL_DIR%" equal "C:\" then "%LOCAL_DIR:~3,1%" equal ""
       if  not "%LOCAL_DIR:~3,1%" == "" (
         if exist "%LOCAL_DIR%\Gemfile" (
-          echo bundler is found: bundle exec %*
+          echo bundler is FOUND: bundle exec %*
           cd %CURRENT_DIR%
           bundle exec %*
         ) else (
@@ -25,10 +25,11 @@ for %%I in (bundle.bat) do (
       goto :LOOP
       ) else (
         echo this is root path: %*
+        cd %CURRENT_DIR%
         %*
       )
   ) else (
-    echo bundler is NOT found or Gemfile is NOT found: %*
+    echo bundler is NOT found  or Gemfile is NOT found: %*
     cd %CURRENT_DIR%
     %*
   )

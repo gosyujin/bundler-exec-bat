@@ -1,5 +1,7 @@
+chef-solo=bunlder-exec chef-solo $*
 heroku=bundler-exec heroku $*
 jekyll=bundler-exec jekyll $*
+knife=bundler-exec knife $*
 rackup=bundler-exec rackup $*
 rails=bundler-exec rails $*
 rake=bundler-exec rake $*
@@ -7,3 +9,4 @@ rspec=bundler-exec rspec $*
 ruby=bundler-exec ruby $*
 spec=bundler-exec spec $*
 spork=bundler-exec spork $* 
+vagrant=bundler-exec vagrant $*
